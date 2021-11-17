@@ -1,0 +1,172 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1525
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bankingly.BackendService", "Bankingly.BackendService\Bankingly.BackendService.csproj", "{37CFB2D6-1716-42A1-B433-C939C2E92C29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Resources", "_Resources", "{430E33C3-3DFB-444D-9F1E-5F1E34ED0CBB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AssembliesReferences", "AssembliesReferences", "{46874E1B-DCCF-4481-A74E-01B13E7EAD6C}"
+	ProjectSection(SolutionItems) = preProject
+		_Resources\AssembliesReferences\Bankingly.BackendServiceBehavior.dll = _Resources\AssembliesReferences\Bankingly.BackendServiceBehavior.dll
+		_Resources\AssembliesReferences\Bankingly.Cloud.BackendServices.dll = _Resources\AssembliesReferences\Bankingly.Cloud.BackendServices.dll
+		_Resources\AssembliesReferences\Bankingly.Cloud.BackendServices.pdb = _Resources\AssembliesReferences\Bankingly.Cloud.BackendServices.pdb
+		_Resources\AssembliesReferences\Infocorp.Administration.UIProcess.dll = _Resources\AssembliesReferences\Infocorp.Administration.UIProcess.dll
+		_Resources\AssembliesReferences\Infocorp.Administration.UIProcess.pdb = _Resources\AssembliesReferences\Infocorp.Administration.UIProcess.pdb
+		_Resources\AssembliesReferences\Infocorp.Framework.Common.dll = _Resources\AssembliesReferences\Infocorp.Framework.Common.dll
+		_Resources\AssembliesReferences\Infocorp.Framework.Common.pdb = _Resources\AssembliesReferences\Infocorp.Framework.Common.pdb
+		_Resources\AssembliesReferences\Infocorp.UIProcess.Common.dll = _Resources\AssembliesReferences\Infocorp.UIProcess.Common.dll
+		_Resources\AssembliesReferences\Infocorp.UIProcess.Common.pdb = _Resources\AssembliesReferences\Infocorp.UIProcess.Common.pdb
+		_Resources\AssembliesReferences\Infocorp.UIProcess.Entities.dll = _Resources\AssembliesReferences\Infocorp.UIProcess.Entities.dll
+		_Resources\AssembliesReferences\Infocorp.UIProcess.Entities.pdb = _Resources\AssembliesReferences\Infocorp.UIProcess.Entities.pdb
+		_Resources\AssembliesReferences\Infocorp.UIProcess.Interfaces.dll = _Resources\AssembliesReferences\Infocorp.UIProcess.Interfaces.dll
+		_Resources\AssembliesReferences\Infocorp.UIProcess.Interfaces.pdb = _Resources\AssembliesReferences\Infocorp.UIProcess.Interfaces.pdb
+		_Resources\AssembliesReferences\Infocorp.UIProcess.MethodParameters.dll = _Resources\AssembliesReferences\Infocorp.UIProcess.MethodParameters.dll
+		_Resources\AssembliesReferences\Infocorp.UIProcess.MethodParameters.pdb = _Resources\AssembliesReferences\Infocorp.UIProcess.MethodParameters.pdb
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NRefactoryWrapper", "NRefactoryWrapper", "{0A6BE3C5-BECF-4AAC-97E6-4734037CEAE2}"
+	ProjectSection(SolutionItems) = preProject
+		_Resources\AssembliesReferences\NRefactoryWrapper\ICSharpCode.NRefactory.dll = _Resources\AssembliesReferences\NRefactoryWrapper\ICSharpCode.NRefactory.dll
+		_Resources\AssembliesReferences\NRefactoryWrapper\NRefactoryWrapper.dll = _Resources\AssembliesReferences\NRefactoryWrapper\NRefactoryWrapper.dll
+		_Resources\AssembliesReferences\NRefactoryWrapper\NRefactoryWrapper.pdb = _Resources\AssembliesReferences\NRefactoryWrapper\NRefactoryWrapper.pdb
+		_Resources\AssembliesReferences\NRefactoryWrapper\NRefactoryWrapper.Utilities.dll = _Resources\AssembliesReferences\NRefactoryWrapper\NRefactoryWrapper.Utilities.dll
+		_Resources\AssembliesReferences\NRefactoryWrapper\NRefactoryWrapper.Utilities.pdb = _Resources\AssembliesReferences\NRefactoryWrapper\NRefactoryWrapper.Utilities.pdb
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackendInstanceDatabase", "BackendInstanceDatabase", "{0DC1AF03-E324-49A8-8FD6-99A37B654A71}"
+	ProjectSection(SolutionItems) = preProject
+		_Resources\BackendInstanceDatabase\Backend_CreateLoanFees.sql = _Resources\BackendInstanceDatabase\Backend_CreateLoanFees.sql
+		_Resources\BackendInstanceDatabase\Backend_CreateServiceBills.sql = _Resources\BackendInstanceDatabase\Backend_CreateServiceBills.sql
+		_Resources\BackendInstanceDatabase\Backend_InsertsClientAndProducts_v1.2.sql = _Resources\BackendInstanceDatabase\Backend_InsertsClientAndProducts_v1.2.sql
+		_Resources\BackendInstanceDatabase\Bankingly_Backend_Dummy.mdf = _Resources\BackendInstanceDatabase\Bankingly_Backend_Dummy.mdf
+		_Resources\BackendInstanceDatabase\Bankingly_Backend_Dummy_log.ldf = _Resources\BackendInstanceDatabase\Bankingly_Backend_Dummy_log.ldf
+		_Resources\BackendInstanceDatabase\Bankingly_Backend_Dummy_SQL2008R2.bak.7z = _Resources\BackendInstanceDatabase\Bankingly_Backend_Dummy_SQL2008R2.bak.7z
+		_Resources\BackendInstanceDatabase\Bankingly_Backend_Dummy_v1.2_SQL2014.bak.7z = _Resources\BackendInstanceDatabase\Bankingly_Backend_Dummy_v1.2_SQL2014.bak.7z
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExamplesXml", "ExamplesXml", "{93888FAA-6341-4EE9-BC9E-7F34B2253589}"
+	ProjectSection(SolutionItems) = preProject
+		_Resources\ExamplesXml\10_GetAccountMovements_Request.xml = _Resources\ExamplesXml\10_GetAccountMovements_Request.xml
+		_Resources\ExamplesXml\16_GetLoanRates_Request.xml = _Resources\ExamplesXml\16_GetLoanRates_Request.xml
+		_Resources\ExamplesXml\19_InsertTransaction_Request_LoanPaymentAmount.xml = _Resources\ExamplesXml\19_InsertTransaction_Request_LoanPaymentAmount.xml
+		_Resources\ExamplesXml\19_InsertTransaction_Response_LoanPaymentAmount.xml = _Resources\ExamplesXml\19_InsertTransaction_Response_LoanPaymentAmount.xml
+		_Resources\ExamplesXml\36_GetPendingServiceBills_Request.xml = _Resources\ExamplesXml\36_GetPendingServiceBills_Request.xml
+		_Resources\ExamplesXml\36_GetPendingServiceBills_Response.xml = _Resources\ExamplesXml\36_GetPendingServiceBills_Response.xml
+		_Resources\ExamplesXml\37_GetServicePaymentDataFromDynamicData_Request.xml = _Resources\ExamplesXml\37_GetServicePaymentDataFromDynamicData_Request.xml
+		_Resources\ExamplesXml\37_GetServicePaymentDataFromDynamicData_Response.xml = _Resources\ExamplesXml\37_GetServicePaymentDataFromDynamicData_Response.xml
+		_Resources\ExamplesXml\38_InsertServicePaymentFromData_Request.xml = _Resources\ExamplesXml\38_InsertServicePaymentFromData_Request.xml
+		_Resources\ExamplesXml\38_InsertServicePaymentFromData_Response.xml = _Resources\ExamplesXml\38_InsertServicePaymentFromData_Response.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CheckBackendService", "CheckBackendService", "{3B27EFDB-5128-4C9E-AAA6-54D37F54E3A4}"
+	ProjectSection(SolutionItems) = preProject
+		_Resources\CheckBackendService\Bankingly.Integration_CheckBackendService.cmd = _Resources\CheckBackendService\Bankingly.Integration_CheckBackendService.cmd
+		_Resources\CheckBackendService\Bankingly.Integration_CheckBackendService.xml = _Resources\CheckBackendService\Bankingly.Integration_CheckBackendService.xml
+		_Resources\CheckBackendService\SvcUtil.exe = _Resources\CheckBackendService\SvcUtil.exe
+		_Resources\CheckBackendService\SvcUtil.exe.config = _Resources\CheckBackendService\SvcUtil.exe.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EnterpriseLibrary_5.0", "EnterpriseLibrary_5.0", "{3E352C88-6455-482E-B241-4B6F152CA6E0}"
+	ProjectSection(SolutionItems) = preProject
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Caching.dll = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Caching.pdb = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Caching.pdb
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Caching.xml = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Caching.xml
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Common.dll = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Common.dll
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Common.pdb = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Common.xml = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Common.xml
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.dll = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.dll
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.pdb = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.pdb
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Data.dll = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Data.dll
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Data.pdb = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Data.xml = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Data.xml
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.pdb = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.pdb
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.xml = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.xml
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.pdb = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.pdb
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.pdb = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.pdb
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.xml = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.xml
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Logging.Database.pdb = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Logging.Database.pdb
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Logging.Database.xml = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Logging.Database.xml
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Logging.dll = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Logging.pdb = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Logging.pdb
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Logging.xml = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.pdb = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.pdb
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.xml = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.xml
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.ServiceLocation.dll = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.ServiceLocation.dll
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.ServiceLocation.pdb = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.ServiceLocation.pdb
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.Unity.Configuration.dll = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.Unity.Configuration.dll
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.Unity.Configuration.pdb = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.Unity.Configuration.pdb
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.Unity.dll = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.Unity.dll
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.Unity.Interception.Configuration.dll = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.Unity.Interception.Configuration.dll
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.Unity.Interception.Configuration.pdb = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.Unity.Interception.Configuration.pdb
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.Unity.Interception.dll = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.Unity.Interception.dll
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.Unity.Interception.pdb = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.Unity.Interception.pdb
+		_Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.Unity.pdb = _Resources\AssembliesReferences\EnterpriseLibrary_5.0\Microsoft.Practices.Unity.pdb
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infocorp.AOP", "Infocorp.AOP", "{471D3FB3-F7D3-4B47-9C99-6F0541A4C7E3}"
+	ProjectSection(SolutionItems) = preProject
+		_Resources\AssembliesReferences\Infocorp.AOP\Infocorp.Common.AOP.dll = _Resources\AssembliesReferences\Infocorp.AOP\Infocorp.Common.AOP.dll
+		_Resources\AssembliesReferences\Infocorp.AOP\Infocorp.Common.AOP.pdb = _Resources\AssembliesReferences\Infocorp.AOP\Infocorp.Common.AOP.pdb
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSI.INTEROP.BANKLINGLY", "CSI.INTEROP.BANKINGLY\CSI.INTEROP.BANKLINGLY.csproj", "{0D1587BF-B8F0-4E9B-B627-C81EDFEA6929}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSI.DATA.BANKINGLY", "CSI.DATA.BANKKINGLY\CSI.DATA.BANKINGLY.csproj", "{FC9142A7-1CA0-4D2B-9337-BD4757516D24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37CFB2D6-1716-42A1-B433-C939C2E92C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37CFB2D6-1716-42A1-B433-C939C2E92C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37CFB2D6-1716-42A1-B433-C939C2E92C29}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{37CFB2D6-1716-42A1-B433-C939C2E92C29}.Debug|x86.Build.0 = Debug|Any CPU
+		{37CFB2D6-1716-42A1-B433-C939C2E92C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37CFB2D6-1716-42A1-B433-C939C2E92C29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37CFB2D6-1716-42A1-B433-C939C2E92C29}.Release|x86.ActiveCfg = Release|Any CPU
+		{37CFB2D6-1716-42A1-B433-C939C2E92C29}.Release|x86.Build.0 = Release|Any CPU
+		{0D1587BF-B8F0-4E9B-B627-C81EDFEA6929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D1587BF-B8F0-4E9B-B627-C81EDFEA6929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D1587BF-B8F0-4E9B-B627-C81EDFEA6929}.Debug|x86.ActiveCfg = Debug|x86
+		{0D1587BF-B8F0-4E9B-B627-C81EDFEA6929}.Debug|x86.Build.0 = Debug|x86
+		{0D1587BF-B8F0-4E9B-B627-C81EDFEA6929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D1587BF-B8F0-4E9B-B627-C81EDFEA6929}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D1587BF-B8F0-4E9B-B627-C81EDFEA6929}.Release|x86.ActiveCfg = Release|x86
+		{0D1587BF-B8F0-4E9B-B627-C81EDFEA6929}.Release|x86.Build.0 = Release|x86
+		{FC9142A7-1CA0-4D2B-9337-BD4757516D24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC9142A7-1CA0-4D2B-9337-BD4757516D24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC9142A7-1CA0-4D2B-9337-BD4757516D24}.Debug|x86.ActiveCfg = Debug|x86
+		{FC9142A7-1CA0-4D2B-9337-BD4757516D24}.Debug|x86.Build.0 = Debug|x86
+		{FC9142A7-1CA0-4D2B-9337-BD4757516D24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC9142A7-1CA0-4D2B-9337-BD4757516D24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC9142A7-1CA0-4D2B-9337-BD4757516D24}.Release|x86.ActiveCfg = Release|x86
+		{FC9142A7-1CA0-4D2B-9337-BD4757516D24}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{46874E1B-DCCF-4481-A74E-01B13E7EAD6C} = {430E33C3-3DFB-444D-9F1E-5F1E34ED0CBB}
+		{0A6BE3C5-BECF-4AAC-97E6-4734037CEAE2} = {46874E1B-DCCF-4481-A74E-01B13E7EAD6C}
+		{0DC1AF03-E324-49A8-8FD6-99A37B654A71} = {430E33C3-3DFB-444D-9F1E-5F1E34ED0CBB}
+		{93888FAA-6341-4EE9-BC9E-7F34B2253589} = {430E33C3-3DFB-444D-9F1E-5F1E34ED0CBB}
+		{3B27EFDB-5128-4C9E-AAA6-54D37F54E3A4} = {430E33C3-3DFB-444D-9F1E-5F1E34ED0CBB}
+		{3E352C88-6455-482E-B241-4B6F152CA6E0} = {46874E1B-DCCF-4481-A74E-01B13E7EAD6C}
+		{471D3FB3-F7D3-4B47-9C99-6F0541A4C7E3} = {46874E1B-DCCF-4481-A74E-01B13E7EAD6C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6EF2CF4-6BC4-4A43-957B-8E2216990A4C}
+	EndGlobalSection
+EndGlobal
