@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ParametroBusqueda">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlConsulta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ParametroBusquedaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ParametroBusquedaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Reporte">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlConsulta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReporteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReporteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidadorDeIdentidad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlConsulta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidadorDeIdentidadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidadorDeIdentidadResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReporteAproximacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlConsulta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReporteAproximacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReporteAproximacionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReporteResultado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlConsulta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReporteResultadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReporteResultadoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EstadisticasUso">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlConsulta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EstadisticasUsoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EstadisticasUsoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ParametroBusquedaSoapIn">
+    <wsdl:part name="parameters" element="tns:ParametroBusqueda" />
+  </wsdl:message>
+  <wsdl:message name="ParametroBusquedaSoapOut">
+    <wsdl:part name="parameters" element="tns:ParametroBusquedaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReporteSoapIn">
+    <wsdl:part name="parameters" element="tns:Reporte" />
+  </wsdl:message>
+  <wsdl:message name="ReporteSoapOut">
+    <wsdl:part name="parameters" element="tns:ReporteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidadorDeIdentidadSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidadorDeIdentidad" />
+  </wsdl:message>
+  <wsdl:message name="ValidadorDeIdentidadSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidadorDeIdentidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReporteAproximacionSoapIn">
+    <wsdl:part name="parameters" element="tns:ReporteAproximacion" />
+  </wsdl:message>
+  <wsdl:message name="ReporteAproximacionSoapOut">
+    <wsdl:part name="parameters" element="tns:ReporteAproximacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReporteResultadoSoapIn">
+    <wsdl:part name="parameters" element="tns:ReporteResultado" />
+  </wsdl:message>
+  <wsdl:message name="ReporteResultadoSoapOut">
+    <wsdl:part name="parameters" element="tns:ReporteResultadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="EstadisticasUsoSoapIn">
+    <wsdl:part name="parameters" element="tns:EstadisticasUso" />
+  </wsdl:message>
+  <wsdl:message name="EstadisticasUsoSoapOut">
+    <wsdl:part name="parameters" element="tns:EstadisticasUsoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="TU_ConsultaSoap">
+    <wsdl:operation name="ParametroBusqueda">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método exclusivo para retornar el conjunto de parámetros a poder utilizar en los siguientes métodos.</wsdl:documentation>
+      <wsdl:input message="tns:ParametroBusquedaSoapIn" />
+      <wsdl:output message="tns:ParametroBusquedaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Reporte">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método exclusivo para retornar un sujeto de una busqueda en un solo paso, retorna el sujeto con el porcentaje mas alto en la aproximación.</wsdl:documentation>
+      <wsdl:input message="tns:ReporteSoapIn" />
+      <wsdl:output message="tns:ReporteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidadorDeIdentidad">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método exclusivo para el producto validador de identidad.</wsdl:documentation>
+      <wsdl:input message="tns:ValidadorDeIdentidadSoapIn" />
+      <wsdl:output message="tns:ValidadorDeIdentidadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReporteAproximacion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método exclusivo para busquedas con aproximación de sujetos.</wsdl:documentation>
+      <wsdl:input message="tns:ReporteAproximacionSoapIn" />
+      <wsdl:output message="tns:ReporteAproximacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReporteResultado">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método exclusivo para retornar un resultado de un sujeto seleccionado de una aproximación.</wsdl:documentation>
+      <wsdl:input message="tns:ReporteResultadoSoapIn" />
+      <wsdl:output message="tns:ReporteResultadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EstadisticasUso">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método exclusivo para retornar detalle ó resumen de consultas.</wsdl:documentation>
+      <wsdl:input message="tns:EstadisticasUsoSoapIn" />
+      <wsdl:output message="tns:EstadisticasUsoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TU_ConsultaSoap" type="tns:TU_ConsultaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ParametroBusqueda">
+      <soap:operation soapAction="http://tempuri.org/ParametroBusqueda" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Reporte">
+      <soap:operation soapAction="http://tempuri.org/Reporte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidadorDeIdentidad">
+      <soap:operation soapAction="http://tempuri.org/ValidadorDeIdentidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReporteAproximacion">
+      <soap:operation soapAction="http://tempuri.org/ReporteAproximacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReporteResultado">
+      <soap:operation soapAction="http://tempuri.org/ReporteResultado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EstadisticasUso">
+      <soap:operation soapAction="http://tempuri.org/EstadisticasUso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TU_ConsultaSoap12" type="tns:TU_ConsultaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ParametroBusqueda">
+      <soap12:operation soapAction="http://tempuri.org/ParametroBusqueda" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Reporte">
+      <soap12:operation soapAction="http://tempuri.org/Reporte" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidadorDeIdentidad">
+      <soap12:operation soapAction="http://tempuri.org/ValidadorDeIdentidad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReporteAproximacion">
+      <soap12:operation soapAction="http://tempuri.org/ReporteAproximacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReporteResultado">
+      <soap12:operation soapAction="http://tempuri.org/ReporteResultado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EstadisticasUso">
+      <soap12:operation soapAction="http://tempuri.org/EstadisticasUso" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TU_Consulta">
+    <wsdl:port name="TU_ConsultaSoap" binding="tns:TU_ConsultaSoap">
+      <soap:address location="http://test.transunioncentroamerica.com/sts/TU_Consulta.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TU_ConsultaSoap12" binding="tns:TU_ConsultaSoap12">
+      <soap12:address location="http://test.transunioncentroamerica.com/sts/TU_Consulta.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

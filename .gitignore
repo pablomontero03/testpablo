@@ -1,0 +1,26 @@
+# Build results
+ebug/
+ebugPublic/
+elease/
+eleases/
+x64/
+x86/
+build/
+bld/
+in/
+bj/
+Local/
+Data.dll/
+Data.pdb/
+dll/
+pdb/
+cache/
+ide-shm/
+ide-wal/
+FileListAbolute.txt/
+config/
+
+bin/
+obj/
+.vs/
+Local/

@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Blaze App</title>
+</head>
+<body>
+
+    <!--<div>
+        <h2>All Products</h2>
+        <ul id="products" />
+    </div>-->
+    <div>
+
+        <!--<input type="button" value="Search" onclick="find();" />-->
+
+
+
+        <table id="DatosBlaze">
+            <tr>
+                <td>Agente</td>
+                <td><input type="text" id="agente" size="30" value="A000000000" /></td>
+            </tr>
+            <tr>
+                <td>Cedula</td>
+                <td><input type="text" id="prodId" size="30" value="502460290"/></td>
+                <td><input type="button" value="Blaze" onclick="FindBlaze();" /></td>
+                <td><input type="button" value="Server" onclick="findServer();" /></td>
+            </tr>
+            <tr>
+                <td>Flujo</td>
+                <td>
+                    <!--<input type="text" id="Fase" size="10" />-->
+                    <select id="Fase">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                <td>SUB ORIGEN</td>
+                <td>
+                    <select id="SubOrigen">
+                        <option value="1">SOC</option>
+                        <option value="2">APP</option>
+                        <option value="3">WEB</option>
+                    </select>
+                </td>
+                <td>Ocupaci&oacute;n</td>
+                <td><input type="text" id="Ocupacion" size="20" value="Arquitecto" /></td>
+            </tr>
+            <tr>
+                <td>Fecha Nacimiento</td>
+                <td><input type="date" id="Nacimiento" data-date="" data-date-format="YYYY MMMM DD" value="1986-09-26" /></td>
+                <td>Nacionalidad</td>
+                <td>
+                    <!--<input type="text" id="Nacinalidad" size="20" value="Costa_Rica_costarricense" />-->
+                    <select id="Nacinalidad">
+                        <option value="1">Costa_Rica_costarricense</option>
+                        <option value="2">Nicaragua_nicaragüense</option>
+                        <option value="3">El_Salvador_salvadoreno_a</option>
+                        <option value="4">Guatemala_guatemalteco</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Pais</td>
+                <td>
+                    <!--<input type="text" id="Pais" size="20" value="506" />-->
+                    <select id="Pais">
+                        <option value="506">Costa Rica</option>
+                        <option value="505">Nicaragua</option>
+                        <option value="503">El Salvador</option>
+                        <option value="502">Guatemala</option>
+                    </select>
+                </td>
+                <td>Profeci&oacute;n</td>
+                <td><input type="text" id="Profesion" size="20" value="Arquitecto" /></td>
+            </tr>
+        </table>
+        <table id="tblKyc">
+            <tr>
+                <td>Genero</td>
+                <td>
+                    <select id="genero">
+                        <option value="1">Masculino</option>
+                        <option value="2">Femanino</option>
+                    </select>
+                </td>
+                <td>Estado Civil</td>
+                <td>
+                    <select id="estadocivil">
+                        <option value="1">Soltero</option>
+                        <option value="2">Casado</option>
+                        <option value="3">Divorciado</option>
+                        <option value="4">Viudo</option>
+                        <option value="5">Union Libre</option>
+                    </select>
+                </td>
+                <td>Ingresos</td>
+                <td><input type="text" id="ingresos" size="20" value="0.00" /></td>
+                <td>Otros Ingresos</td>
+                <td><input type="text" id="Otrosingresos" size="20" value="0.00" /></td>
+            </tr>
+            <tr>
+                <td>Fecha Ingreso Laboral</td>
+                <td><input id="FecIngLab" type="date" data-date="" data-date-format="YYYY MMMM DD" value="2017-09-07" /></td>
+                <td>Cantidad Dependientes</td>
+                <td><input type="text" id="dependientes" size="2" value="0" /></td>
+                <td>Cantidad vehiculos</td>
+                <td><input type="text" id="vehiculos" size="2" value="0" /></td>
+            </tr>
+            <tr>
+                <td>Celular</td>
+                <td><input type="text" id="celular" size="15" value="" /></td>
+                <td>Casa</td>
+                <td><input type="text" id="casa" size="15" value="" /></td>
+                <td>trabajo</td>
+                <td><input type="text" id="trabajo" size="15" value="" /></td>
+                <!--<td>Marca</td>
+                <td>
+                    <select id="Marcas">
+                        <option value="0" selected="selected">DEFECTO</option>
+                        <option value="1">PEPE</option>
+                        <option value="2">MULTIMONEY</option>
+                        <option value="1">BETO</option>
+                        <option value="1">CHAMBA</option>
+                        <option value="1">MULTIVALORES</option>
+                        <option value="3">IMPULSA-T</option>
+                        <option value="4">OVALOS</option>
+                        <option value="3">GENTENOMINA</option>
+                    </select>
+                </td>-->
+            </tr>
+        </table>
+        <!--<h2>Result</h2>
+        <ul id="productsRessult" />-->
+    </div>
+    <!--<p id="product" />-->
+    <script src="jquery-2.0.3.min.js"></script>
+    <script>
+        var uri = 'api/BlazeTranslator/Invoke';
+
+
+        //$(document).ready(function () {
+        //    // Send an AJAX request
+        //    /*
+
+        //        AppName = InvokeMember,
+        //        AppVersion = version,
+        //        HostName = prop.Server.MachineName,
+        //        BaseUrl = prop.ApplicationInstance.Request.Url.Authority,
+        //        ClientIp = HttpContext.Current.Request.UserHostAddress
+        //    */
+
+        //});
+        function FindConfig() {
+
+
+            $.ajax(
+            {
+                url: 'api/BlazeTranslator/InvokeConfig',
+                type: "POST",
+                data: {
+                    P_STR_LLAVE_01: "APLICACION_SUC_VIRTUAL_CR",
+                    P_STR_LLAVE_02: "CEDULA",
+                    P_STR_LLAVE_03: "CONFIGURACION",
+                    P_STR_LLAVE_04: "VALIDADORES"
+                },
+                success: function (result) {
+                    alert(result);
+
+                },
+                error: function (xhr, status, p3, p4) {
+                    var err = "Error " + " " + status + " " + p3;
+                    if (xhr.responseText && xhr.responseText[0] == "{")
+                        err = JSON.parse(xhr.responseText).message;
+                    alert(err);
+                }
+            });
+
+        }
+
+        function findServer() {
+            $.getJSON("api/BlazeTranslator/ValidateService?InvokeMember=INDEX")
+               .done(function (data) {
+                   alert("HostName: " + data.HostName + " ClientIp: " + data.ClientIp + " BaseUrl: " + data.BaseUrl);
+                   // On success, 'data' contains a list of products.
+                   //$.each(data, function (key, item) {
+                   //    // Add a list item for the product.
+                   //    alert(data);
+                   //});
+               });
+        };
+
+        function FindBlaze() {
+
+            //OBJETO NECESARIO PARA GUATEMALA, SI NO VA EL SISTEMA NO DEBE DEJARLO PASAR
+            var STR_VARIABLES = [
+                      { STR_TIPO: "CEDULA", STR_VALOR: $('#prodId').val(), STR_DESCRIPCION: "CEDULA DEL CLIENTE" }
+                      , { STR_TIPO: "FECHANACIMIENTO", STR_VALOR: $('#Nacimiento').val(), STR_DESCRIPCION: "FECHA DE NACIMIENTO" },
+                       { STR_TIPO: "PROFESION", STR_VALOR: $('#Profesion').val(), STR_DESCRIPCION: "PROFESION" },
+            ]
+
+            $.ajax(
+            {
+                url: uri,
+                type: "POST",
+                data: {
+                    STR_COD_PAIS: $("#Pais option:selected").val(),
+                    STR_CEDULA: $('#prodId').val(),
+                    SIN_FACE: $("#Fase option:selected").val(),
+                    STR_OCUPACION: $('#Ocupacion').val(),
+                    STR_PROFESION: $('#Profesion').val(),
+                    FEC_NACIMIENTO: $('#Nacimiento').val(),
+                    STR_NACIONALIDAD: $("#Nacinalidad option:selected").text(),
+                    INT_SUB_ORIGEN: $("#SubOrigen :selected").val(),
+                    BIN_ID_SOLICITUD_REF: "123456789",
+                    STR_USUARIO_CREACION: $('#agente').val(),
+                    STR_VARIABLE: STR_VARIABLES,
+                    STR_GENERO: $("#genero option:selected").text(),
+                    STR_ESTADO_CIVIL: $("#estadocivil option:selected").text(),
+                    FEC_INGRESO_LABORAL: $('#FecIngLab').val(),
+                    STR_INGRESO_BRUTO: $('#ingresos').val(),
+                    STR_OTROS_INGRESO: $('#Otrosingresos').val(),
+                    INT_CANTIDAD_DEPENDIENTES: $('#dependientes').val(),
+                    INT_CANTIDAD_VEHICULOS: $('#vehiculos').val(),
+                    STR_TEL_CELULAR: $('#celular').val(),
+                    STR_TEL_CASA: $('#casa').val(),
+                    STR_TEL_TRABAJO: $('#trabajo').val()//,
+                    //INT_ID_MARCA: $("#Marcas option:selected").val()
+                },
+                success: function (result) {
+
+                    if (result == "") return alert("Ocurrio un error");
+                    var F2P = result;
+                    var ciResponseText = document.getElementById('Resultado');
+                    $("#ResultadoBlaze tr").remove();
+                    ciResponseText.innerHTML = '';
+
+                    var res = F2P.F2P_FILE.TRANSACTION_RESPONSE.RESPONSE_CODE;
+                    if (res == "ACK00") {
+                        var tr = '';
+                        var td = '';
+                        td = td + '<tr><td>RESPONSE_CODE</td>' + '<td>' + F2P.F2P_FILE.TRANSACTION_RESPONSE.RESPONSE_CODE + '</td></tr>';
+
+
+                        // td = td + '<tr> <td>NOMBRE:</td>' + '<td>' + F2P.F2P_FILE.INFORMACION_PERSONAL.PRIMERNOMBRE + ' ' + F2P.F2P_FILE.INFORMACION_PERSONAL.PRIMERAPELLIDO + ' ' + F2P.F2P_FILE.INFORMACION_PERSONAL.SEGUNDOAPELLIDO + '</td></tr>';
+                        tr = td = td;
+
+                        $('#ResultadoBlaze').append(tr);
+
+
+                        //var obj = JSON.parse(http.response);
+
+                    }
+                    else {
+                        ciResponseText.innerHTML = '';
+                        $("#ResultadoBlaze tr").remove();
+                        alert("BLOQUEADO");
+                    }
+
+                    ciResponseText.innerHTML = JSON.stringify(F2P, undefined, 2);
+                },
+                error: function (xhr, status, p3, p4) {
+                    var err = p3;
+                    if (xhr.responseText && xhr.responseText[0] == "{")
+                        err = JSON.parse(xhr.responseText).message;
+                    alert(err);
+                }
+            });
+
+        }
+    </script>
+
+    <br />
+    <div id="productsRessult">
+        <table id="ResultadoBlaze"> </table>
+        <!--<h2>Result</h2>
+        <ul id="productsRessult" />-->
+    </div>
+    <br />
+
+    <div id="Resultado">
+        <!--<h2>Result</h2>
+        <ul id="productsRessult" />-->
+    </div>
+</body>
+</html>
